@@ -22,11 +22,14 @@ O objetivo é desenvolver, de forma progressiva, soluções para triagem, diagn�
 
 Durante a pesquisa encontrei algumas bases interessantes para integrar o projeto como <a href="https://physionet.org/content/ptb-xl/1.0.3/?utm_source=chatgpt.com/">PTB-XL no PhysioNet</a>  que gostaria de ter utilizado porem ao verificar os dados nela obtido constatei uma grande complexidade de se utilizar no primeiro momento, até mesmo pois não consegui nela encontrar outras variaveis que foram pedidos no exercicio como "colesteral". 
 
-Resolvi então utilizar uma base mais amigavel que é a <a href="https://archive.ics.uci.edu/dataset/45/heart+disease?utm_source=chatgpt.com/">PUCI Machine Learning Repository — Heart Disease</a>  dentro dessa base verifiquei que houve um problema na cleveland.data (originalmente do arquivo baixado) porem dei uma estudada nos dados disponiveis e consegui realizar uma limpeza, tradução e substituição de algumas informações para base ficar mais facil de manipular.
+Resolvi então utilizar uma base mais amigavel que é a <a href="https://archive.ics.uci.edu/dataset/45/heart+disease?utm_source=chatgpt.com/">PUCI Machine Learning Repository — Heart Disease</a>  dentro dessa base verifiquei que houve um problema na cleveland.data (originalmente do arquivo baixado) porem dei uma estudada nos dados disponiveis e consegui realizar uma limpeza, tradução e substituição de algumas informações para base ficar mais facil de manipular, para ser mais "rapido" fiz a maipulação da base no proprio excel e salvei em csv.
 
 Referente as imagens pedidas, foi bem desafiador encontra-las até enquanto analisava e estudava sobre a <a href="https://physionet.org/content/ptb-xl/1.0.3/?utm_source=chatgpt.com/">PTB-XL no PhysioNet</a> vi que poderia utilizar a biblioteca <a href="https://pypi.org/project/wfdb/">wfdb</a> para realizar a leitura de pontos encontrados por sensores onde iria me retornar um grafico com os pontos medidos e assim me retornaria o ECG montado em um grafico, porem como na atividade pedia imagens em JPG ou PNG pesquisei e encontreia uma base publica no <a href="https://www.kaggle.com/datasets/analiviafr/ecg-images?resource=download">Kaggle</a> onde há uma quantidade interessante de imagens para estudo. 
 
+## Link do Google Drive 
 
+- <a href="https://drive.google.com/drive/folders/1-P5dJOhV7t-pcPovUToFCZklN1UrE3Tx?usp=drive_link/">Google Drive</a> 
+ obs: arquivo se encontra zipado devido a grande quantidade de imagens. 
 
 ## Entregaveis da Fase 1
 
@@ -42,7 +45,15 @@ Referente as imagens pedidas, foi bem desafiador encontra-las até enquanto anal
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>FASE1</b>: Todos os projetos da FASE1 
+- <b>Assets</b>: imagens utilizadas para formatação do README.
+
+- <b>Base_utilizada</b>: Aqui se encontra a base utilizada antes do tratamento.
+
+- <b>dataset_cardiovascular_300_pacientes.csv</b>: Base em CSV já manipulada.
+
+
+
+
 
 
 
