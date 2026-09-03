@@ -12,17 +12,19 @@
 - <a href="https://www.linkedin.com/in/pedro-carvalho-cea-149658137/">Pedro Carvalho Rocha Lima</a> 
 
 
-## 📜 Descrição
+## 📜 Descrição FASE 1
 
 Bem-vindo ao nosso reposiório de atividades do curso de Inteligência Artifical da FIAP ON SEGUNDO ANO.
 
-O repositorio sera utilizado para entrega das atividades referente ao segundo ano do curso de Inteligencia Artificial seguindo a estrutura de fases descrias a baixo!
+## Entregaveis da Fase 1
 
-## Sobre o Projeto
+- Dados numéricos (simulados ou reais) relacionados a pacientes cardíacos
 
-O CardioIA é um projeto acadêmico que integra Inteligência Artificial, Ciência de Dados e Saúde para simular o ecossistema de uma cardiologia moderna.
+- Textos médicos ou literários relacionados à saúde cardiovascular
 
-A plataforma combina dados clínicos, Machine Learning, Visão Computacional, IoT e agentes inteligentes para apoiar processos como triagem, diagnóstico, monitoramento, assistência remota e previsão de riscos cardiovasculares.
+- Imagens médicas que representem exames ou sinais visuais do coração.
+
+
 
 ## 📁 Estrutura de pastas
 
