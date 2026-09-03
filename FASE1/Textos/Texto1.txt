@@ -1,0 +1,260 @@
+FATORES ASSOCIADOS ÀS DOENÇAS CARDIOVASCULARES NA POPULAÇÃO ADULTA BRASILEIRA: PESQUISA NACIONAL DE SAÚDE, 2019
+
+Crizian Saar Gomes; Renata Patrícia Fonseca Gonçalves; Alanna Gomes da Silva; Ana Carolina Micheletti Gomide Nogueira de Sá; Francielle Thalita Almeida Alves; Antonio Luiz Pinho Ribeiro; Deborah Carvalho Malta.
+
+Revista Brasileira de Epidemiologia. 2021;24(Supl. 2):e210013.
+DOI: 10.1590/1980-549720210013.supl.2
+
+RESUMO
+
+Objetivo: estimar a prevalência e investigar os fatores sociodemográficos, de saúde e estilo de vida associados ao diagnóstico autorreferido de doença cardiovascular (DCV) na população adulta brasileira.
+
+Métodos: Foram analisados dados da Pesquisa Nacional de Saúde (PNS 2019). A presença de DCV foi autorreferida por meio da pergunta: “Algum médico já lhe deu o diagnóstico de uma doença do coração?”. Foram avaliados fatores sociodemográficos, condições de saúde e estilo de vida. Para análise dos dados utilizou-se a Regressão de Poisson com variância robusta.
+
+Resultados: 5,3% (IC95%: 5,04–5,57) dos adultos brasileiros referiram DCV. Destes, 29,08% (IC95%: 27,04–31,21) realizaram cirurgia de revascularização miocárdica ou angioplastia coronariana e 8,26% (IC95%: 7,09–9,6) relataram limitação intensa nas atividades habituais devido à DCV. Os fatores associados à DCV foram idade avançada; sexo masculino; raça/cor branca; escolaridade; posse de plano de saúde; autoavaliação da saúde como regular ou ruim/muito ruim; hipertensão; colesterol alto; diabetes; ser ex-fumante; consumo de frutas e hortaliças conforme o recomendado; consumo de álcool; e prática de atividade física no lazer.
+
+Conclusões: A DCV está associada a fatores sociodemográficos, de saúde e estilos de vida. Torna-se importante apoiar políticas públicas, programas e metas para a redução das doenças cardiovasculares no Brasil, especialmente nos grupos mais vulneráveis.
+
+Palavras-chave: Doenças Cardiovasculares; Fatores de Risco; Inquéritos Epidemiológicos; Brasil.
+
+
+1. INTRODUÇÃO
+
+As doenças cardiovasculares (DCV) são a principal causa de mortalidade no Brasil e no mundo, além de ocasionar aumento da morbidade, mortalidade prematura, incapacidades, perda da qualidade de vida e dos custos diretos e indiretos à saúde.
+
+De acordo com as estimativas do estudo Global Burden of Disease (GBD), globalmente, os casos prevalentes de DCV aumentaram de forma significativa entre 1990 e 2019, passando de 271 milhões para 523 milhões, respectivamente. Houve também um aumento do número de mortes por DCV de 12,1 milhões em 1990 para 18,6 milhões em 2019. Soma-se ainda o crescimento dos anos vividos com incapacidade (years lived with disability – YLDs), que dobraram ao longo desses anos, de 17,7 milhões para 34,4 milhões.
+
+No Brasil, as DCV constituem-se como a primeira causa de óbitos desde a década de 1990. Houve crescimento da mortalidade, passando de 270 mil em 1990 para 400 mil mortes em 2019, o que corresponde a 48% do total de óbitos. Essas doenças também são importantes causas de anos de vida perdidos ajustados por incapacidade (DALYs).
+
+O aumento das DCV está relacionado com o envelhecimento da população e com fatores de risco clássicos como hipertensão arterial, diabetes, dislipidemias, obesidade, sedentarismo, tabagismo, dieta inadequada, estresse e histórico familiar. Questões sociodemográficas, étnicas, culturais, dietéticas e comportamentais também são fortes preditores de causalidade, morbidade e mortalidade prematura e podem explicar diferenças na carga de DCV entre populações.
+
+Para a prevenção das DCV torna-se necessário o fortalecimento das medidas de proteção e promoção da saúde, especialmente aquelas que promovem hábitos de vida saudáveis, acesso às medidas para prevenção primária e secundária de DCV e tratamento de eventos cardiovasculares. O monitoramento e a vigilância dos fatores de risco devem ser prioritários, pois permitem o desenvolvimento de estratégias baseadas em evidências.
+
+O presente estudo objetivou estimar a prevalência e investigar os fatores sociodemográficos, de saúde e estilo de vida associados ao diagnóstico autorreferido de DCV na população adulta brasileira.
+
+
+2. MÉTODOS
+
+Foi realizado estudo transversal com dados da Pesquisa Nacional de Saúde (PNS) de 2019, inquérito de base populacional representativo da população brasileira, realizado pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde.
+
+O questionário da PNS foi dividido em três partes: informações do domicílio; informações de todos os moradores; e informações sobre um indivíduo selecionado aleatoriamente.
+
+A população-alvo da PNS 2019 consistiu em indivíduos com 15 anos ou mais, residentes em domicílios particulares permanentes. A amostra foi por conglomerados em três estágios, tendo os setores censitários como unidade primária, os domicílios como unidade secundária e um morador com 15 anos ou mais como unidade terciária. O tamanho mínimo definido para a amostra foi de 108.525 domicílios. A amostra final foi de 94.114 domicílios com entrevista realizada, com taxa de resposta de 93,6%.
+
+Para as análises deste estudo foram excluídos os indivíduos abaixo de 18 anos, totalizando 88.531 indivíduos.
+
+O diagnóstico de DCV foi autorreferido e avaliado a partir da questão: “Algum médico já lhe deu o diagnóstico de uma doença do coração, tais como infarto, angina, insuficiência cardíaca ou outra?”. Foram considerados portadores de DCV os indivíduos que responderam “SIM”.
+
+Para os indivíduos que relataram diagnóstico de DCV foram avaliadas a idade no primeiro diagnóstico; realização de cirurgia de ponte de safena ou cateterismo com colocação de stent ou angioplastia; grau de limitação nas atividades habituais devido à doença cardíaca; e cuidados relacionados à DCV, incluindo dieta, atividade física regular, uso regular de medicamentos e acompanhamento regular com profissional de saúde.
+
+Foram avaliados fatores sociodemográficos, condições de saúde e estilo de vida.
+
+Características sociodemográficas:
+- Sexo: masculino e feminino.
+- Faixa etária: 18 a 24, 25 a 39, 40 a 59 e 60 anos ou mais.
+- Escolaridade.
+- Raça/cor: branca, parda, preta e outras.
+- Renda em salários mínimos.
+- Região: Norte, Nordeste, Sudeste, Sul e Centro-Oeste.
+- Posse de plano de saúde.
+
+Condições de saúde:
+- Autoavaliação do estado de saúde.
+- Diagnóstico autorreferido de hipertensão arterial.
+- Diagnóstico autorreferido de diabetes.
+- Diagnóstico autorreferido de colesterol alto.
+- Estado nutricional, segundo IMC.
+
+Estilo de vida:
+- Tabagismo.
+- Consumo abusivo de bebida alcoólica.
+- Consumo recomendado de frutas e hortaliças.
+- Consumo de alimentos ultraprocessados.
+- Ingestão elevada de sal.
+- Atividade física suficiente no lazer.
+
+Para descrição dos dados foram calculadas proporções e intervalos de confiança de 95%. Para verificar fatores associados à DCV foi utilizada a Razão de Prevalência (RP), obtida por regressão de Poisson com variância robusta. Foram incluídas no modelo multivariado as variáveis com valor de p < 0,20 nas análises brutas. No modelo final foram consideradas associadas as variáveis com p ≤ 0,05.
+
+As análises foram realizadas no software Stata versão 14, utilizando o módulo survey e considerando os pesos de pós-estratificação.
+
+A PNS 2019 foi aprovada pela Comissão Nacional de Ética em Pesquisa (CONEP) do Ministério da Saúde, sob parecer nº 3.529.376. A participação foi voluntária e a confidencialidade das informações foi garantida. Os dados da PNS 2019 estão disponíveis para acesso e uso público no repositório do IBGE.
+
+
+3. RESULTADOS
+
+Foram avaliados 88.531 indivíduos com idade acima de 18 anos. Destes, 5,3% relataram diagnóstico médico de DCV.
+
+A idade média do primeiro diagnóstico médico de DCV foi de 46,7 anos.
+
+Entre os adultos que referiram DCV:
+- 29,1% realizaram cirurgia de ponte de safena ou angioplastia;
+- 8,3% relataram limitação intensa nas atividades habituais devido à DCV;
+- 43,7% relataram realizar dieta;
+- 26,2% praticavam atividade física no lazer;
+- 69,1% utilizavam medicamentos regularmente;
+- 69,9% realizavam acompanhamento regular com profissional de saúde.
+
+A prevalência de DCV foi maior entre pessoas com 60 anos ou mais, indivíduos com baixa escolaridade, pessoas de cor branca e moradores da região Sul.
+
+Quanto às condições de saúde e comportamentais, a maior prevalência ocorreu entre indivíduos que possuíam plano de saúde, avaliavam sua saúde como ruim ou muito ruim, apresentavam hipertensão, diabetes, colesterol alto ou obesidade, eram ex-fumantes, consumiam frutas e hortaliças conforme recomendado, não faziam uso abusivo de bebidas alcoólicas e não eram fisicamente ativos no lazer.
+
+No modelo multivariado, a maior prevalência de DCV esteve associada a:
+- idade de 60 anos ou mais: RP 2,8 (IC95% 1,8–4,4);
+- ensino fundamental completo e médio incompleto: RP 1,2 (IC95% 1,0–1,4);
+- posse de plano de saúde: RP 1,4 (IC95% 1,2–1,6);
+- autoavaliação da saúde regular: RP 2,0 (IC95% 1,8–2,3);
+- autoavaliação ruim/muito ruim: RP 3,1 (IC95% 2,7–3,6);
+- hipertensão: RP 2,3 (IC95% 2,0–2,5);
+- colesterol alto: RP 1,7 (IC95% 1,5–1,9);
+- diabetes: RP 1,2 (IC95% 1,1–1,3);
+- ser ex-fumante: RP 1,2 (IC95% 1,1–1,3).
+
+No modelo multivariado, sexo feminino, raça/cor parda ou preta e prática de atividade física no lazer estiveram associados a menor prevalência de DCV.
+
+
+4. DISCUSSÃO
+
+O estudo identificou que aproximadamente 1 a cada 20 adultos brasileiros apresentava DCV, mostrando que o diagnóstico autorreferido da doença era frequente no país. Cerca de um terço realizou cirurgia de revascularização miocárdica e/ou angioplastia coronariana e cerca de um décimo relatou limitação intensa.
+
+Os fatores associados positivamente à DCV foram idade avançada, escolaridade, posse de plano de saúde, pior autoavaliação da saúde, hipertensão, colesterol alto, diabetes, condição de ex-fumante e determinados hábitos alimentares.
+
+Na análise bivariada, as mulheres apresentaram maior prevalência de DCV; entretanto, no modelo multivariado observou-se maior prevalência nos homens. Os autores discutem que diferenças em fatores de risco, comportamentos, acesso aos serviços de saúde e práticas de promoção e prevenção podem contribuir para esse resultado.
+
+O estudo identificou maior prevalência de DCV com o aumento da idade, especialmente na faixa de 60 anos ou mais. A associação entre envelhecimento e aumento progressivo da DCV pode estar relacionada às alterações da senescência e ao maior tempo de exposição a fatores de risco como poluição, tabagismo, alimentação não saudável e sedentarismo.
+
+A menor prevalência observada entre pessoas pretas e pardas deve ser interpretada com cautela. Os autores destacam a existência de desigualdades étnico-raciais na saúde cardiovascular e sugerem que diferenças de acesso aos serviços de saúde, diagnóstico e sobrevivência podem influenciar os resultados.
+
+Indivíduos com plano de saúde apresentaram maior prevalência de DCV, possivelmente refletindo maior facilidade de acesso ao diagnóstico médico.
+
+A autoavaliação ruim ou muito ruim da saúde esteve associada a maior prevalência de DCV. Esse indicador incorpora a percepção do indivíduo sobre sinais, sintomas, gravidade, riscos, incapacidades e impactos sobre seu bem-estar.
+
+Hipertensão, diabetes e colesterol alto apresentaram-se como fatores associados ao diagnóstico de DCV. A presença desses fatores produz efeitos adversos sobre o sistema cardiovascular e reforça o caráter multifatorial das doenças cardiovasculares.
+
+Na hipertensão, a elevação progressiva da pressão arterial está relacionada ao risco de acidente vascular cerebral e doença arterial coronariana. No diabetes, são importantes manifestações cardiovasculares a insuficiência cardíaca, a doença arterial periférica e a doença arterial coronariana. As dislipidemias estão associadas ao aumento do risco de DCV aterosclerótica.
+
+Entre os fatores relacionados ao estilo de vida, tabagismo, alimentação não saudável, inatividade física e consumo excessivo de bebidas alcoólicas são destacados como importantes fatores de risco.
+
+A associação positiva entre ex-fumantes e DCV pode ser explicada por causalidade reversa, uma vez que pessoas podem ter abandonado o tabagismo após receberem o diagnóstico de uma doença cardiovascular. O mesmo tipo de explicação pode contribuir para resultados envolvendo mudanças no consumo de álcool e de frutas e hortaliças após o diagnóstico.
+
+A atividade física regular apresentou associação inversa com a mortalidade e foi considerada fator de proteção para doenças crônicas não transmissíveis, contribuindo para qualidade de vida, bem-estar e controle do peso.
+
+Entre as limitações, destaca-se a impossibilidade de estabelecer causalidade por se tratar de estudo transversal. Além disso, o estudo analisou doenças do coração e não todas as doenças cardiovasculares, e as informações autorreferidas podem estar sujeitas a viés de informação.
+
+Apesar das limitações, os autores destacam a robustez metodológica e a representatividade nacional da PNS.
+
+Os resultados mostraram prevalência de DCV de aproximadamente 5% da população adulta brasileira. A DCV esteve associada a fatores sociodemográficos, condições de saúde e fatores relacionados ao estilo de vida. Essas informações podem apoiar políticas públicas, programas e metas para a redução das DCV no Brasil, especialmente entre grupos vulneráveis.
+
+
+5. DADOS PRINCIPAIS DAS TABELAS
+
+Tabela 1 — Prevalência e razão de prevalência bruta para doenças cardiovasculares, segundo características sociodemográficas, condições clínicas e estilos de vida, PNS Brasil 2019.
+
+Prevalência total de DCV: 5,3% (IC95% 5,0–5,6).
+
+Sexo:
+- Masculino: 4,9%.
+- Feminino: 5,6%.
+
+Faixa etária:
+- 18–24 anos: 1,4%.
+- 25–39 anos: 1,9%.
+- 40–59 anos: 4,8%.
+- 60 anos ou mais: 13,1%.
+
+Raça/cor:
+- Branca: 6,1%.
+- Preta: 4,8%.
+- Parda: 4,6%.
+- Outras: 5,2%.
+
+Região:
+- Norte: 3,3%.
+- Nordeste: 4,1%.
+- Sudeste: 6,0%.
+- Sul: 6,8%.
+- Centro-Oeste: 4,8%.
+
+Plano de saúde:
+- Não: 4,9%.
+- Sim: 6,2%.
+
+Autoavaliação da saúde:
+- Boa/muito boa: 2,8%.
+- Regular: 8,8%.
+- Ruim/muito ruim: 17,1%.
+
+Hipertensão:
+- Não: 2,7%.
+- Sim: 13,6%.
+
+Diabetes:
+- Não: 4,5%.
+- Sim: 15,4%.
+
+Colesterol elevado:
+- Não: 3,9%.
+- Sim: 13,4%.
+
+Estado nutricional:
+- Eutrófico: 4,6%.
+- Sobrepeso: 5,3%.
+- Obesidade: 7,0%.
+
+Tabagismo:
+- Não fumante: 4,3%.
+- Ex-fumante: 7,9%.
+- Fumante: 4,6%.
+
+Atividade física no lazer:
+- Não ativo: 6,1%.
+- Ativo: 3,4%.
+
+
+Tabela 2 — Modelo multivariado dos fatores associados às doenças cardiovasculares.
+
+- Sexo feminino: RP 0,8; IC95% 0,7–0,9; p < 0,001.
+- 25–39 anos: RP 1,2; IC95% 0,7–1,9.
+- 40–59 anos: RP 1,7; IC95% 1,1–2,6; p = 0,02.
+- 60 anos ou mais: RP 2,8; IC95% 1,8–4,4; p < 0,001.
+- Raça/cor parda: RP 0,8; IC95% 0,7–0,9; p < 0,001.
+- Raça/cor preta: RP 0,8; IC95% 0,7–1,0; p = 0,01.
+- Fundamental completo/médio incompleto: RP 1,2; IC95% 1,0–1,4; p = 0,04.
+- Plano de saúde: RP 1,4; IC95% 1,2–1,6; p < 0,001.
+- Saúde regular: RP 2,0; IC95% 1,8–2,3; p < 0,001.
+- Saúde ruim/muito ruim: RP 3,1; IC95% 2,7–3,6; p < 0,001.
+- Hipertensão: RP 2,3; IC95% 2,0–2,5; p < 0,001.
+- Colesterol elevado: RP 1,7; IC95% 1,5–1,9; p < 0,001.
+- Diabetes: RP 1,2; IC95% 1,1–1,3; p = 0,01.
+- Ex-fumante: RP 1,2; IC95% 1,1–1,3; p < 0,001.
+- Consumo recomendado de frutas e hortaliças: RP 1,2; IC95% 1,1–1,4; p = 0,002.
+- Uso de álcool: RP 0,7; IC95% 0,6–0,9; p < 0,001.
+- Atividade física no lazer: RP 0,8; IC95% 0,7–0,9; p < 0,001.
+
+
+Material suplementar 1 — Características dos indivíduos com doenças cardiovasculares.
+
+- Diagnóstico de doença cardiovascular: 5,30%.
+- Idade média no primeiro diagnóstico: 46,70 anos.
+- Cirurgia de revascularização miocárdica, cateterismo com stent ou angioplastia: 29,08%.
+- Sem limitação nas atividades habituais: 50,85%.
+- Limitação um pouco: 22,65%.
+- Limitação moderada: 14,61%.
+- Limitação intensa: 8,26%.
+- Limitação muito intensa: 3,64%.
+- Realização de dieta: 43,66%.
+- Prática de atividade física: 26,23%.
+- Uso regular de medicamentos: 69,09%.
+- Acompanhamento regular com profissional de saúde: 69,89%.
+
+
+REFERÊNCIA DO ARTIGO
+
+Gomes CS, Gonçalves RPF, Silva AG, Sá ACMGN, Alves FTA, Ribeiro ALP, Malta DC. Fatores associados às doenças cardiovasculares na população adulta brasileira: Pesquisa Nacional de Saúde, 2019. Revista Brasileira de Epidemiologia. 2021;24(Supl. 2):e210013. DOI: 10.1590/1980-549720210013.supl.2.
+
+FONTE
+
+SciELO / SciELO Preprints.
+DOI: 10.1590/1980-549720210013.supl.2
+Licença informada no registro do SciELO Preprints: Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Observação: este arquivo foi organizado em formato TXT, com o texto do artigo normalizado para facilitar uso em NLP e no projeto acadêmico CardioIA. Para consulta da versão editorial original, utilizar o DOI e a página oficial do artigo.
