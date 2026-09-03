@@ -28,7 +28,7 @@ A plataforma combina dados clínicos, Machine Learning, Visão Computacional, Io
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>FASE1</b>: Todos os projetos da FASE1 
+- <b>FASE1</b>: Todos os arquivos e descrições referentes a Fase1  
 
 
 
