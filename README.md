@@ -30,6 +30,8 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>FASE1</b>: Todos os arquivos e descrições referentes a Fase1  
 
+- <b>FASE2</b>: Todos os arquivos e descrições referentes a Fase
+
 
 
   
