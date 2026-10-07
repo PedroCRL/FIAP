@@ -1,0 +1,12 @@
+[
+  { "id": 1, "nome": "Mariana Alves", "idade": 54, "telefone": "(11) 98888-1234", "ultimaConsulta": "2026-08-12", "status": "Estável" },
+  { "id": 2, "nome": "João Pereira", "idade": 67, "telefone": "(11) 97777-2345", "ultimaConsulta": "2026-09-02", "status": "Em observação" },
+  { "id": 3, "nome": "Carla Souza", "idade": 45, "telefone": "(21) 96666-3456", "ultimaConsulta": "2026-07-28", "status": "Estável" },
+  { "id": 4, "nome": "Ricardo Lima", "idade": 72, "telefone": "(21) 95555-4567", "ultimaConsulta": "2026-09-15", "status": "Risco elevado" },
+  { "id": 5, "nome": "Fernanda Costa", "idade": 38, "telefone": "(31) 94444-5678", "ultimaConsulta": "2026-08-30", "status": "Estável" },
+  { "id": 6, "nome": "Paulo Henrique", "idade": 59, "telefone": "(31) 93333-6789", "ultimaConsulta": "2026-09-20", "status": "Em observação" },
+  { "id": 7, "nome": "Juliana Ramos", "idade": 50, "telefone": "(41) 92222-7890", "ultimaConsulta": "2026-08-05", "status": "Estável" },
+  { "id": 8, "nome": "Antônio Dias", "idade": 64, "telefone": "(41) 91111-8901", "ultimaConsulta": "2026-09-10", "status": "Risco elevado" },
+  { "id": 9, "nome": "Beatriz Nunes", "idade": 29, "telefone": "(51) 90000-9012", "ultimaConsulta": "2026-06-18", "status": "Estável" },
+  { "id": 10, "nome": "Carlos Eduardo", "idade": 61, "telefone": "(51) 99999-0123", "ultimaConsulta": "2026-09-22", "status": "Em observação" }
+]

@@ -1,0 +1,35 @@
+.aviso {
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+.tabelaWrapper {
+  overflow-x: auto;
+  background: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.tabela th,
+.tabela td {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+  white-space: nowrap;
+}
+
+.tabela th {
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tabela tr:last-child td {
+  border-bottom: none;
+}

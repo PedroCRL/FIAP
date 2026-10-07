@@ -1,0 +1,46 @@
+:root {
+  --cor-fundo: #f4f7fb;
+  --cor-texto: #1f2933;
+  --cor-texto-suave: #52606d;
+  --cor-primaria: #2563eb;
+  --cor-primaria-escura: #1d4ed8;
+  --cor-borda: #d9e2ec;
+  --cor-card: #ffffff;
+  --cor-perigo: #dc2626;
+  --cor-sucesso: #16a34a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select, button {
+  font-size: 1rem;
+}
+
+main {
+  padding: 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
