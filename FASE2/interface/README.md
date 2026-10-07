@@ -17,9 +17,11 @@
 
 Nesta etapa, desenvolvi um portal front-end do CardioIA utilizando React e Vite. A ideia foi criar uma experiência que simulasse como o usuário interagiria com o sistema na prática. esse portal não tem um back-end real conectado. Por isso, os dados utilizados são simulados em arquivos JSON e ficam armazenados temporariamente no próprio navegador, utilizando memória e localStorage.
 
-## O que tem
+## No projeto
 
-- **<u>Login simulado</u>** : fize um login simulado, onde basta preencher usuário e senha. O acesso fica salvo no navegador, então continua ativo mesmo se a página for recarregada.
+Realizei um portal bem simples.
+
+- **<u>Login simulado </u>** : fize um login simulado, onde basta preencher usuário e senha. O acesso fica salvo no navegador, então continua ativo mesmo se a página for recarregada.
 
 
 - **Lista de pacientes**: a lista de pacientes utiliza dados simulados em um arquivo JSON
