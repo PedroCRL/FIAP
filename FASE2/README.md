@@ -37,31 +37,23 @@ Na Fase 2 conforme proposto pelo exercicio separei em  duas partes:
 
 - <b>executar_tudo.py </b>: Arquivo parte que roda o programa por completo, porem se entrada de dados.
 
-## Parte 1 — como funciona
+## Parte 1 
 
 - Arquivo .txt -> gerei um arquivo com 10 frases utilizado o chat GPT para para que servisse de base para leitura de relatos do modelo
 
-- Pedi tambem para o chat GPT realizar a criação de uma planilha ou arquivo .csv com o mapa de conhecimento para que pudesse ser a base de conhecimento do modelo.
+- Pedi tambem para o chat GPT realizar a criação de um arquivo .csv com o mapa de conhecimento para que pudesse ser a base de conhecimento do modelo
+
+Funcionamento do fluxo do programa :
+
+relato do paciente(entrada)  -> normaliza (minúsculo, sem acento, só pra facilitar a busca)  -> procura os sintomas/expressões do mapa de conhecimento no texto  -> soma os pesos das evidências encontradas -> mostra o ranking das condições mais pontuadas
 
 
-relato (texto)
-  -> normaliza (minúsculo, sem acento, só pra facilitar a busca)
-  -> procura os sintomas/expressões do mapa de conhecimento no texto
-  -> soma os pesos das evidências encontradas, por condição
-  -> mostra o ranking das condições mais pontuadas
+Um detalhe: o mapa de conhecimento tem várias linhas repetindo o mesmo sintoma e a mesma condição com expressões diferentes (ex: "falta de ar" aparece em várias linhas ligado a Insuficiência Cardíaca). Se eu simplesmente somasse o peso de toda linha que "bateu" no texto, o ranking ficaria inflado só por causa de uma palavra genérica repetida. Por isso o código guarda só a melhor evidência para cada par (sintoma, condição) — prioriza a expressão mais específica encontrada e se empatar usa o maior peso
+
+## Parte 2 
 
 
-Um detalhe: o mapa de conhecimento tem várias linhas repetindo o mesmo sintoma e a mesma condição com expressões diferentes (ex.: "falta de ar" aparece em várias linhas ligado a Insuficiência Cardíaca). Se eu simplesmente somasse o peso de toda linha que "bateu" no texto, o ranking ficaria inflado só por causa de uma palavra genérica repetida. Por isso o código guarda só a melhor evidência para cada par (sintoma, condição) — prioriza a expressão mais específica encontrada e se empatar usa o maior peso.
-
-## Parte 2 — como funciona
-
-
-frase
-  -> divide em treino/teste (75/25, stratify, random_state=42)
-  -> TF-IDF 
-  -> Logistic Regression
-  -> classifica em "baixo risco", "médio risco" ou "alto risco"
-  -> mostra accuracy, precision, recall, f1 e matriz de confusão
+frase -> divide em treino/teste (75/25) -> TF-IDF -> Logistic Regression -> classifica em "baixo risco", "médio risco" ou "alto risco"  -> mostra accuracy, precision, recall, f1 e matriz de confusão
 
 
 ## Como rodar
@@ -86,7 +78,7 @@ python classificacao_risco.py
 
 O script da Parte 2 salva o gráfico da matriz de confusão em `matriz_confusao.png`, na raiz do projeto.
 
-Depois de treinar e testar o modelo, o `classificacao_risco.py` deixa você digitar suas próprias frases no terminal e ver a classificação na hora (aperte Enter vazio para sair desse modo).
+Depois de treinar e testar o modelo, no arquivo sendo rodado sozinho `classificacao_risco.py` deixa você digitar suas próprias frases no terminal para ver a classificação na hora (aperte Enter vazio para sair desse modo).
 
 ## Sobre os pesos do mapa de conhecimento
 

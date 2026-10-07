@@ -19,7 +19,7 @@ Nesta etapa, desenvolvi um portal front-end do CardioIA utilizando React e Vite.
 
 ## O que tem
 
-- **Login simulado** : fize um login simulado, onde basta preencher usuário e senha. O acesso fica salvo no navegador, então continua ativo mesmo se a página for recarregada.
+- **<u>Login simulado<u>** : fize um login simulado, onde basta preencher usuário e senha. O acesso fica salvo no navegador, então continua ativo mesmo se a página for recarregada.
 
 
 - **Lista de pacientes**: a lista de pacientes utiliza dados simulados em um arquivo JSON
