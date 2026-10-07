@@ -12,73 +12,107 @@
 - <a href="https://www.linkedin.com/in/pedro-carvalho-cea-149658137/">Pedro Carvalho Rocha Lima</a> 
 
 
-## 📜 Descrição FASE 1
 
-O CardioIA é um projeto acadêmico que integra tecnologia, Ciência de Dados e saúde para desenvolver uma plataforma digital inteligente que simula o ecossistema de uma cardiologia moderna.
+# CardioIA — Fase 2
 
-Ao longo das diferentes fases do curso, o projeto utiliza tecnologias como Machine Learning, Visão Computacional, IoT e agentes inteligentes, aplicadas a dados e processos relacionados à cardiologia.
+Nesse Fase A ideia é usar IA e dados para criar  um sistema que consiga entender os sintomas de um paciente, relacioná-los a possíveis doenças e indicar seu nível de risco. Os relatos e o dataset usados aqui são **simulados e criados por inteligencia artificial(chatGPT)** — o projeto não é uma ferramenta médica.
 
-O objetivo é desenvolver, de forma progressiva, soluções para triagem, diagnóstico, monitoramento, assistência remota e previsões médicas
+## O que o projeto faz
 
-## PARTE 1
+Na Fase 2 conforme proposto pelo exercicio separei em  duas partes:
 
-Durante a pesquisa encontrei algumas bases interessantes para integrar o projeto como <a href="https://physionet.org/content/ptb-xl/1.0.3/">PTB-XL no PhysioNet</a>  que gostaria de ter utilizado porem ao verificar os dados nela obtido constatei uma grande complexidade de se utilizar no primeiro momento, até mesmo pois não consegui nela encontrar outras variaveis que foram pedidos no exercicio como "colesteral". 
+1. **Extração de sintomas**: lê relatos em texto, procura sintomas conhecidos usando o mapa de conhecimento e sugere possíveis condições associadas, com um ranking simples por pontos.
 
-Resolvi então utilizar uma base mais amigavel que é a <a href="https://archive.ics.uci.edu/dataset/45/heart+disease/">PUCI Machine Learning Repository — Heart Disease</a>  dentro dessa base verifiquei que houve um problema na cleveland.data (originalmente do arquivo baixado) porem dei uma estudada nos dados disponiveis e consegui realizar uma limpeza, tradução e substituição de algumas informações para base ficar mais facil de manipular, para ser mais "rapido" fiz a maipulação da base no proprio excel e salvei em csv.
-
-
-## PARTE 2
-
-Referene aos textos, utilizei duas fontes encontradas em pesquisa
-
-<a href="https://doi.org/10.5935/abc.20190204">Updated Cardiovascular Prevention Guideline of the Brazilian Society of Cardiology - 2019</a> 
-
-<a href="https://www.scielo.br/j/abc/a/KyjkFNCJn68BRTphGtv9BfQ/?lang=pt">Índices Hematológicos Inflamatórios, Doenças Cardiovasculares e Mortalidade: Uma Revisão Narrativa</a> 
-
-
-
-Explicando sobre o porque de um formato TXT no projeto NLP.
-O formato .txt é uma boa opção para trabalhar com NLP porque contém apenas o texto, sem toda a formatação e informações extras de um PDF, facilitando o processamento.
-Esse conteúdo pode ser usado para treinar ou aprimorar modelos de IA, ajudando-os a entender termos médicos, linguagem científica e a estrutura de artigos acadêmicos. Também pode ser utilizado em tarefas como resumo de textos, classificação de conteúdos e identificação de termos e informações importantes.
-Outra aplicação importante no CardioIA é o uso em uma base RAG. Nesse caso, o artigo é dividido em pequenos trechos, transformado em representações numéricas (embeddings) e armazenado em uma base de busca. Assim, quando o usuário fizer uma pergunta, a IA consegue encontrar os trechos mais relevantes e utilizá-los para formular a resposta.
-
-## PARTE 3
-
-Referente as imagens pedidas, foi bem desafiador encontra-las até enquanto analisava e estudava sobre a <a href="https://physionet.org/content/ptb-xl/1.0.3/">PTB-XL no PhysioNet</a> vi que poderia utilizar a biblioteca <a href="https://pypi.org/project/wfdb/">wfdb</a> para realizar a leitura de pontos encontrados por sensores onde iria me retornar um grafico com os pontos medidos e assim me retornaria o ECG montado em um grafico, porem como na atividade pedia imagens em JPG ou PNG pesquisei e encontreia uma base publica no <a href="https://www.kaggle.com/datasets/analiviafr/ecg-images?resource=download">Kaggle</a> onde há uma quantidade interessante de imagens para estudo. 
-
-
-
-## Link do Google Drive 
-
-- <a href="https://drive.google.com/drive/folders/1-P5dJOhV7t-pcPovUToFCZklN1UrE3Tx?usp=drive_link/">Google Drive</a> 
- obs: arquivo se encontra zipado devido a grande quantidade de imagens. 
-
-## Entregaveis da Fase 1
-
-- Dados numéricos (simulados ou reais) relacionados a pacientes cardíacos
-
-- Textos médicos ou literários relacionados à saúde cardiovascular
-
-- Imagens médicas que representem exames ou sinais visuais do coração.
-
-
+2. **Classificador de risco**: treina um modelo simples (TF-IDF + Logistic Regression) para classificar as frases como "baixo risco", "médio risco" ou "alto risco".
 
 ## 📁 Estrutura de pastas
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+- <b>dados</b>: Todos dados utilizados para o projeto, conta com os seguintes arquivos dentro dessa pasta: sintomas.txt ,mapa_conhecimento.csv ,dataset_risco.csv.
 
-- <b>Assets</b>: imagens utilizadas para formatação do README.
+- <b>Interface </b>: Ir Alem 1 (desafio).
 
-- <b>Base_utilizada</b>: Aqui se encontra a base utilizada antes do tratamento.
+- <b>extracao_sintomas.py </b>: Arquivo parte 1.
 
-- <b>dataset_cardiovascular_300_pacientes.csv</b>: Base em CSV já manipulada.
+- <b>classificacao_risco.py</b>: Arquivo parte 2.
+
+- <b>executar_tudo.py </b>: Arquivo parte que roda o programa por completo, porem se entrada de dados.
+
+## Parte 1 — como funciona
+
+- Arquivo .txt -> gerei um arquivo com 10 frases utilizado o chat GPT para para que servisse de base para leitura de relatos do modelo
+
+- Pedi tambem para o chat GPT realizar a criação de uma planilha ou arquivo .csv com o mapa de conhecimento para que pudesse ser a base de conhecimento do modelo.
 
 
+relato (texto)
+  -> normaliza (minúsculo, sem acento, só pra facilitar a busca)
+  -> procura os sintomas/expressões do mapa de conhecimento no texto
+  -> soma os pesos das evidências encontradas, por condição
+  -> mostra o ranking das condições mais pontuadas
 
 
+Um detalhe: o mapa de conhecimento tem várias linhas repetindo o mesmo sintoma e a mesma condição com expressões diferentes (ex.: "falta de ar" aparece em várias linhas ligado a Insuficiência Cardíaca). Se eu simplesmente somasse o peso de toda linha que "bateu" no texto, o ranking ficaria inflado só por causa de uma palavra genérica repetida. Por isso o código guarda só a melhor evidência para cada par (sintoma, condição) — prioriza a expressão mais específica encontrada e se empatar usa o maior peso.
+
+## Parte 2 — como funciona
 
 
+frase
+  -> divide em treino/teste (75/25, stratify, random_state=42)
+  -> TF-IDF 
+  -> Logistic Regression
+  -> classifica em "baixo risco", "médio risco" ou "alto risco"
+  -> mostra accuracy, precision, recall, f1 e matriz de confusão
 
 
+## Como rodar
 
-  
+```bash
+cd FASE2
+python -m venv .venv
+.venv\Scripts\activate        # no Windows
+pip install -r requirements.txt
+```
+
+Rodar tudo de uma vez:
+```bash
+python executar_tudo.py
+```
+
+Ou separado:
+```bash
+python extracao_sintomas.py
+python classificacao_risco.py
+```
+
+O script da Parte 2 salva o gráfico da matriz de confusão em `matriz_confusao.png`, na raiz do projeto.
+
+Depois de treinar e testar o modelo, o `classificacao_risco.py` deixa você digitar suas próprias frases no terminal e ver a classificação na hora (aperte Enter vazio para sair desse modo).
+
+## Sobre os pesos do mapa de conhecimento
+
+Usei uma escala de 1 a 3, definida só pra dar ordem de prioridade dentro do projeto:
+
+- 3 = evidência mais forte;
+
+- 2 = evidência moderada;
+
+- 1 = evidência mais fraca/genérica.
+
+Não é uma probabilidade e não tem validação médica é só uma forma simples de ranquear hipóteses no exercício. 
+
+
+## Entregaveis da Fase 2
+
+- Arquivo .txt com 10 frases completas simulando descrições de sintomas relatados por pacientes.
+
+- Planilha ou arquivo .csv com o mapa de conhecimento (associação entre sintomas e possíveis diagnósticos).
+
+- Código Python (.ipynb ou .py) que faz a leitura do arquivo de frases, identifica os sintomas e sugere diagnósticos com base na ontologia.
+
+- Arquivo .csv com frases e rótulos.
+
+- Código .py com TF-IDF, classificação e avaliação do modelo.
+
+- Repositório público no GitHub contendo todos os arquivos do projeto da Fase 2.
+
+- Um vídeo de até 4 minutos demonstrando o funcionamento completo da solução (pode ser com gravação de tela e explicação por voz ou legenda). O vídeo deve ser postado no YouTube como "não listado" e o link deve ser incluído no README do repositório no GitHub.

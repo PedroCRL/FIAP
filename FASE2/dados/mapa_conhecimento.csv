@@ -1,0 +1,52 @@
+﻿sintoma,expressao_alternativa,condicao,categoria,peso
+dor no peito,pressão no peito,Síndrome Coronariana Aguda,dor torácica,3
+dor no peito,aperto no peito,Síndrome Coronariana Aguda,dor torácica,3
+dor no peito,dor torácica,Síndrome Coronariana Aguda,dor torácica,3
+dor no peito,peso no peito,Angina,dor torácica,2
+dor no peito,desconforto no peito,Angina,dor torácica,2
+dor no peito,dor durante esforço,Angina,dor torácica,3
+dor no peito,dor que melhora com repouso,Angina,dor torácica,3
+dor no peito,dor após esforço,Angina,dor torácica,2
+irradiação da dor,dor no braço esquerdo,Síndrome Coronariana Aguda,dor torácica,3
+irradiação da dor,dor na mandíbula,Síndrome Coronariana Aguda,dor torácica,3
+irradiação da dor,dor nas costas,Síndrome Coronariana Aguda,dor torácica,2
+suor frio,transpiração fria,Síndrome Coronariana Aguda,autonômico,3
+náusea,enjoos,Síndrome Coronariana Aguda,gastrointestinal,2
+vômito,episódios de vômito,Síndrome Coronariana Aguda,gastrointestinal,2
+falta de ar,dificuldade para respirar,Insuficiência Cardíaca,respiratório,2
+falta de ar,respiração difícil,Insuficiência Cardíaca,respiratório,2
+falta de ar,dispneia,Insuficiência Cardíaca,respiratório,2
+falta de ar,falta de ar aos esforços,Insuficiência Cardíaca,respiratório,3
+falta de ar,falta de ar ao deitar,Insuficiência Cardíaca,respiratório,3
+falta de ar,acordo com falta de ar,Insuficiência Cardíaca,respiratório,3
+cansaço,cansaço constante,Insuficiência Cardíaca,geral,2
+cansaço,fadiga,Insuficiência Cardíaca,geral,2
+cansaço,fraqueza,Insuficiência Cardíaca,geral,1
+cansaço,baixa tolerância ao esforço,Insuficiência Cardíaca,geral,3
+inchaço nas pernas,pernas inchadas,Insuficiência Cardíaca,retenção de líquido,3
+inchaço nas pernas,inchaço nos tornozelos,Insuficiência Cardíaca,retenção de líquido,3
+inchaço nas pernas,pés inchados,Insuficiência Cardíaca,retenção de líquido,2
+ganho de peso,aumento de peso recente,Insuficiência Cardíaca,retenção de líquido,2
+dificuldade para deitar,preciso de vários travesseiros,Insuficiência Cardíaca,respiratório,3
+dificuldade para deitar,não consigo dormir deitado,Insuficiência Cardíaca,respiratório,3
+palpitação,coração acelerado,Arritmia Cardíaca,ritmo cardíaco,3
+palpitação,coração disparado,Arritmia Cardíaca,ritmo cardíaco,3
+palpitação,batimentos acelerados,Arritmia Cardíaca,ritmo cardíaco,3
+palpitação,sinto o coração bater forte,Arritmia Cardíaca,ritmo cardíaco,2
+batimento irregular,coração irregular,Arritmia Cardíaca,ritmo cardíaco,3
+batimento irregular,coração falhando,Arritmia Cardíaca,ritmo cardíaco,3
+batimento irregular,batimentos descompassados,Arritmia Cardíaca,ritmo cardíaco,3
+batimento irregular,pulo no coração,Arritmia Cardíaca,ritmo cardíaco,2
+tontura,sensação de tontura,Arritmia Cardíaca,neurológico,2
+tontura,sensação de desmaio,Arritmia Cardíaca,neurológico,3
+tontura,cabeça leve,Arritmia Cardíaca,neurológico,2
+desmaio,perda de consciência,Arritmia Cardíaca,neurológico,3
+desmaio,quase desmaio,Arritmia Cardíaca,neurológico,3
+fraqueza,sensação de fraqueza,Arritmia Cardíaca,geral,1
+falta de ar,falta de ar durante palpitação,Arritmia Cardíaca,respiratório,3
+dor no peito,dor no peito durante palpitação,Arritmia Cardíaca,dor torácica,2
+pressão alta,pressão arterial elevada,Hipertensão Arterial,pressão arterial,3
+pressão alta,pressão alta,Hipertensão Arterial,pressão arterial,3
+pressão alta,hipertensão,Hipertensão Arterial,pressão arterial,3
+dor de cabeça,dor de cabeça frequente,Hipertensão Arterial,neurológico,1
+tontura,tontura associada à pressão,Hipertensão Arterial,neurológico,1
