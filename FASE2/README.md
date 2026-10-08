@@ -55,6 +55,9 @@ Um detalhe: o mapa de conhecimento tem várias linhas repetindo o mesmo sintoma 
 
 frase -> divide em treino/teste (75/25) -> TF-IDF -> Logistic Regression -> classifica em "baixo risco", "médio risco" ou "alto risco"  -> mostra accuracy, precision, recall, f1 e matriz de confusão
 
+## video
+
+https://youtu.be/qvraz-A3aHU
 
 ## Como rodar
 
