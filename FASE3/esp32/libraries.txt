@@ -1,0 +1,3 @@
+# Bibliotecas para o simulador online wokwi.com (aba "Library Manager")
+MQTT
+DHT sensor library for ESPx

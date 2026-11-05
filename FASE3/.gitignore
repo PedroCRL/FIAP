@@ -1,0 +1,5 @@
+# senhas
+esp32/include/config.h
+# arquivos de compilação
+esp32/.pio/
+.vscode/

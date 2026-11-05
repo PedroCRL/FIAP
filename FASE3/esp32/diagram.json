@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "author": "CardioIA - FIAP",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -124.5,
+      "left": -149.4,
+      "attrs": { "temperature": "36.6", "humidity": "55" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 140,
+      "left": -230,
+      "attrs": { "color": "red", "label": "Batimento", "bounce": "0" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw1",
+      "top": 30,
+      "left": 210,
+      "attrs": { "value": "" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledStatus",
+      "top": 140,
+      "left": 230,
+      "attrs": { "color": "limegreen", "label": "Rede" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledAlert",
+      "top": 140,
+      "left": 300,
+      "attrs": { "color": "red", "label": "Alerta" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 230,
+      "left": 190,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 230,
+      "left": 260,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+
+    [ "dht1:VCC", "esp:3V3", "red", [] ],
+    [ "dht1:GND", "esp:GND.1", "black", [] ],
+    [ "dht1:SDA", "esp:D15", "green", [] ],
+
+    [ "btn1:1.r", "esp:D4", "blue", [] ],
+    [ "btn1:2.r", "esp:GND.1", "black", [] ],
+
+    [ "sw1:2", "esp:D18", "orange", [] ],
+    [ "sw1:3", "esp:GND.1", "black", [] ],
+
+    [ "esp:D26", "r1:1", "green", [] ],
+    [ "r1:2", "ledStatus:A", "green", [] ],
+    [ "ledStatus:C", "esp:GND.2", "black", [] ],
+
+    [ "esp:D27", "r2:1", "red", [] ],
+    [ "r2:2", "ledAlert:A", "red", [] ],
+    [ "ledAlert:C", "esp:GND.2", "black", [] ]
+  ],
+  "dependencies": {}
+}
