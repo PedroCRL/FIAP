@@ -26,15 +26,15 @@ O projeto foi dividido em duas partes principais:
 
 1. **Edge Computing:** o ESP32 realiza a leitura dos sensores, calcula a frequência cardíaca, verifica os limites definidos e armazena as informações quando está sem internet.
 
-2. **MQTT e Dashboard:** os dados são enviados para o HiveMQ Cloud por meio do protocolo MQTT. Depois, o Node-RED recebe as informações e apresenta os resultados em gráficos, indicadores e alertas.
+2. **MQTT e Dashboard:** os dados são enviados para o HiveMQ Cloud por meio do protocolo MQTT. Depois, o Node-RED recebe as informações e apresenta os resultados em gráficos.
 
-O funcionamento geral acontece da seguinte maneira:
+O funcionamento geral:
 
 ESP32 (sensores) → Processamento local → Fila de armazenamento → MQTT → HiveMQ Cloud → Node-RED → Dashboard.
 
 ## 📁 Estrutura de pastas
 
-O projeto foi organizado da seguinte forma:
+
 
 ```text
 CardioIA_simplificado/
@@ -52,26 +52,19 @@ CardioIA_simplificado/
 │   ├── wokwi.toml
 │   └── libraries.txt
 │
-├── node-red/
-│   └── flows.json
-│
-├── docs/
-│   ├── relatorio_edge_computing.md
-│   ├── relatorio_mqtt_dashboard.md
-│   └── configuracao_hivemq.md
-│
-└── imagens/
-    └── prints da execução
+└── node-red/
+  └── flows.json
+
+
 ```
 
 - **esp32:** contém os arquivos responsáveis pela programação e simulação do dispositivo.
 - **node-red:** contém o fluxo utilizado para receber e processar as mensagens MQTT.
-- **docs:** contém os relatórios e as instruções de configuração do projeto.
-- **imagens:** espaço destinado aos registros e prints dos testes realizados.
+
 
 ## Parte 1 — Edge Computing
 
-Nesta parte, utilizamos o ESP32 para realizar o processamento das informações diretamente no dispositivo.
+Nesta parte, utilizei o ESP32 para realizar o processamento das informações diretamente no dispositivo.
 
 Os componentes utilizados foram:
 
@@ -82,7 +75,7 @@ Os componentes utilizados foram:
 - LED verde para indicar a conexão;
 - LED vermelho para indicar alertas.
 
-O sensor DHT22 realiza leituras a cada 2 segundos. Para a frequência cardíaca, utilizamos um botão em que cada toque representa um batimento. Também criamos uma simulação automática de BPM para facilitar os testes.
+O sensor DHT22 realiza leituras a cada 2 segundos. Para a frequência cardíaca, utilizei um botão em que cada toque representa um batimento. 
 
 ### Funcionamento do processamento
 
@@ -99,33 +92,28 @@ Quando algum valor ultrapassa esses limites, o LED vermelho acende e o sistema r
 
 ### Armazenamento offline
 
-Um dos pontos importantes foi permitir que o dispositivo continuasse funcionando mesmo sem internet.
+Um  ponto importante foi permitir que o dispositivo continuasse funcionando mesmo sem internet.
 
-Para isso, criamos uma fila circular na memória RAM do ESP32, com capacidade para até 1.000 leituras.
+Para isso, criei uma fila circular no ESP32, com capacidade para até 1.000 leituras.
 
-Quando a conexão cai, as informações continuam sendo coletadas e armazenadas. Assim que a internet retorna, o dispositivo começa a enviar os registros pendentes, mantendo a ordem das leituras.
+Quando a conexão cai, as informações continuam sendo coletadas e armazenadas. Assim que a internet retorna, o dispositivo envia os registros pendentes.
 
-Escolhemos essa estratégia para evitar a perda de informações durante possíveis falhas de conexão.
 
 ## Parte 2 — MQTT e HiveMQ Cloud
 
-Depois de desenvolver o processamento local, implementamos a comunicação entre o ESP32 e a nuvem utilizando o protocolo MQTT.
 
-Criamos uma conta no HiveMQ Cloud e configuramos um broker para receber as mensagens enviadas pelo dispositivo.
+Criei uma conta no HiveMQ Cloud e configurei um broker para receber as mensagens enviadas pelo dispositivo.
 
 A comunicação funciona por meio de três tópicos principais:
 
 - `cardioia/pacientes/paciente001/sinais`: recebe todas as leituras.
+
 - `cardioia/pacientes/paciente001/alertas`: recebe os registros com alertas.
+
 - `cardioia/pacientes/paciente001/status`: informa se o dispositivo está online ou offline.
 
-As informações são transmitidas no formato JSON, contendo dados como temperatura, umidade, frequência cardíaca, horário e identificação de cada leitura.
+As informações são  no formato JSON, contendo dados como temperatura, umidade, frequência cardíaca e horário 
 
-Também utilizamos o **QoS 1**, que permite confirmar o recebimento das mensagens pelo broker. Dessa forma, o ESP32 só remove uma leitura da fila depois de receber a confirmação.
-
-Outro recurso implementado foi a identificação de mensagens duplicadas, evitando que uma mesma leitura seja contabilizada mais de uma vez no Node-RED.
-
-A comunicação utiliza TLS na porta 8883 e autenticação por usuário e senha.
 
 ## Parte 3 — Dashboard no Node-RED
 
@@ -136,27 +124,16 @@ A ideia foi criar uma interface simples para acompanhar os dados recebidos pelo 
 A dashboard foi dividida em quatro grupos:
 
 1. **Paciente e conexão:** apresenta a identificação do paciente e o estado da conexão Wi-Fi e MQTT.
+
 2. **Sinais vitais:** mostra a frequência cardíaca, temperatura e umidade.
+
 3. **Alertas:** apresenta as situações identificadas e a quantidade de registros recebidos.
+
 4. **Histórico:** exibe gráficos com as alterações dos sinais vitais ao longo do tempo.
 
-Também implementamos notificações automáticas. Quando algum valor ultrapassa os limites configurados, a dashboard apresenta uma mensagem de alerta e destaca a situação em vermelho.
+ Quando algum valor ultrapassa os limites configurados, a dashboard apresenta uma mensagem de alerta e destaca a situação em vermelho.
 
-O Node-RED também realiza a validação das mensagens recebidas e identifica registros repetidos antes de atualizar os indicadores.
-
-## Circuito
-
-A ligação dos componentes no ESP32 foi organizada da seguinte maneira:
-
-| Componente | Pino do ESP32 |
-|---|---|
-| DHT22 | GPIO15 |
-| Botão (batimento) | GPIO4 e GND |
-| Chave deslizante | GPIO18 e GND |
-| LED verde | GPIO26 |
-| LED vermelho | GPIO27 |
-
-Os LEDs utilizam resistores de 220 Ω para proteção.
+O Node-RED identifica registros repetidos antes de atualizar os indicadores.
 
 ## Como rodar
 
@@ -239,22 +216,5 @@ Durante o desenvolvimento, identificamos alguns pontos que podem ser melhorados:
 - **Node-RED:** processamento e integração dos dados.
 - **Node-RED Dashboard 2.0:** criação da interface de monitoramento.
 
-## Conclusão
 
-Com o desenvolvimento dessa etapa, conseguimos entender melhor como funciona a integração entre dispositivos IoT, processamento local e serviços em nuvem.
 
-O principal aprendizado foi perceber a importância do Edge Computing, pois o ESP32 consegue continuar coletando, processando e armazenando informações mesmo quando não existe conexão com a internet.
-
-Também aprendemos a utilizar o MQTT para transmitir os dados e o Node-RED para organizar as informações em uma dashboard.
-
-De maneira geral, conseguimos desenvolver um protótipo funcional que atende aos objetivos propostos pela atividade e demonstra como essas tecnologias podem ser utilizadas em soluções de monitoramento na área da saúde.
-
-## Entregáveis da fase
-
-- Código-fonte do ESP32.
-- Circuito desenvolvido e testado no Wokwi.
-- Configuração do HiveMQ Cloud.
-- Fluxo de integração do Node-RED.
-- Dashboard de monitoramento com gráficos e alertas.
-- Relatórios sobre Edge Computing e MQTT.
-- Prints demonstrando o funcionamento do projeto.
